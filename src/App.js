@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Search from './Search';
 import List from './List';
+import './App.css';
 
 const App = () => 
 {
@@ -52,7 +53,7 @@ const App = () =>
 
 
     return (
-        <div>
+        <div><center>
             <h1>Phonebook</h1>
             <Search list={list} filter={filter} />
             <h2>Add Contact</h2>
@@ -71,7 +72,7 @@ const App = () =>
             </form>
             <h2>List of Contacts</h2>
             <List list={list} />
-        </div>
+        </center></div>
     )
 }
 
