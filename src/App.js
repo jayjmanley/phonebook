@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Search from './Search';
 import List from './List';
-import './App.css';
 
 const App = () => 
 {
@@ -10,6 +9,7 @@ const App = () =>
     const [ list, setList ] = useState([
         { firstname: 'Vulcan', lastname: 'Kristiansen', phone: '402-293-0123', show: true },
         { firstname: 'George', lastname: 'Martin', phone: '213-451-2432', show: true },
+        { firstname: 'Logan', lastname: 'Roy', phone: '209-234-1234', show: true },
     ]);
 
 
@@ -53,7 +53,7 @@ const App = () =>
 
 
     return (
-        <div><center>
+        <div>
             <h1>Phonebook</h1>
             <Search list={list} filter={filter} />
             <h2>Add Contact</h2>
@@ -72,7 +72,7 @@ const App = () =>
             </form>
             <h2>List of Contacts</h2>
             <List list={list} />
-        </center></div>
+        </div>
     )
 }
 
