@@ -1,16 +1,14 @@
 import React, { Component } from "react";
-import Info from "./Info";
+import App from './App';
 
-class List extends Component {
-  static defaultProps = {
-    data: []
-  };
-
-  render() {
-    const { data } = this.props;
-    const list = data.map(info => <Info key={info.id} info={info} />);
-    return <div className="List">{list}</div>;
-  }
-}
+const List = ({list}) => (
+    <ul>
+      {(
+        list
+          .filter(list => list.show)
+          .map(list => <li><b>Name:</b> {list.firstname} {list.lastname} <b>Number:</b> {list.phone}</li>)
+      )}
+    </ul>
+);
 
 export default List;
