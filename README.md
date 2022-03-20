@@ -1,6 +1,6 @@
 # Phonebook App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simply visit this URL to try the app: https://phonebook-black.vercel.app/
 
 ## Features
 
